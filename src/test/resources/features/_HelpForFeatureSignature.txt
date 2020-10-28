@@ -1,0 +1,16 @@
+Feature: LogIn to Admin Application
+
+# for developers
+# POJO Scenario (POJOScenario.class) will be created automatically if
+# It will be contains the name attributes as string between symbols "*" and "-" also its value between symbols "'"
+
+  Scenario Outline: Scenario attributes user-'<user>' app-'<app>'
+    Given I am going to <app>
+
+    Examples:
+    |app|user|
+    |admin|irina.kiseleva|
+    |admin|iurii.kiselev |
+
+#    POJOScenario will be created with fields app and user. Parser is called in the BaseSteps.
+#       It need for initializing scenario params
